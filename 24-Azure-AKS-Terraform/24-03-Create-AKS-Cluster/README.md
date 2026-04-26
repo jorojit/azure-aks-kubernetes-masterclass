@@ -23,7 +23,7 @@ ssh-keygen \
     -t rsa \
     -b 4096 \
     -C "azureuser@myserver" \
-    -f ~/.ssh/aks-prod-sshkeys-terraform/aksprodsshkey \
+    -f ~/.ssh/aks/aksprodsshkey \
     -N mypassphrase
 
 # List Files
@@ -38,7 +38,7 @@ ls -lrt $HOME/.ssh/aks-prod-sshkeys-terraform
 # V2 Changes
 # SSH Public Key for Linux VMs
 variable "ssh_public_key" {
-  default = "~/.ssh/aks-prod-sshkeys-terraform/aksprodsshkey.pub"
+  default = "~/.ssh/aks/aksprodsshkey.pub"
   description = "This variable defines the SSH Public Key for Linux k8s Worker nodes"  
 }
 

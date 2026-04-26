@@ -53,7 +53,7 @@
 - Go to https://shell.azure.com
 ```t
 # Template
-az aks get-credentials --resource-group <Resource-Group-Name> --name <Cluster-Name>
+az aks get-credentials --resource-group aks_group --name aks
 
 # Replace Resource Group & Cluster Name
 az aks get-credentials --resource-group aks-rg1 --name aksdemo1
