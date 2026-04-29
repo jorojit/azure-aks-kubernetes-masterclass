@@ -14,7 +14,7 @@
 - **Subscription:** StackSimplify-Paid-Subscription
 - **Resource Group:** Creat New: terraform-aks-tst
 - **Cluster preset configuration:** Dev/Test
-- **Kubernetes Cluster Name:** aksdemo1  
+- **Kubernetes Cluster Name:** terraform-aks-tst-cluster  
 - **Region:** (Europe) Austria East
 - **Fleet Manager:** NONE (LEAVE TO DEFAULT)
 - **Availability zones:** NONE (LEAVE TO DEFAULT)
@@ -75,7 +75,7 @@
 az aks get-credentials --resource-group <Resource-Group-Name> --name <Cluster-Name>
 
 # Replace Resource Group & Cluster Name
-az aks get-credentials --resource-group terraform-aks-tst --name aksdemo1
+az aks get-credentials --resource-group terraform-aks-tst --name terraform-aks-tst-cluster
 
 # Get kubectl client version only (shows client version only (no server required))
 kubectl version --client=true
@@ -132,7 +132,7 @@ kubectl version
 az login
 
 # Configure Cluster Creds (kube config)
-az aks get-credentials --resource-group terraform-aks-tst --name aksdemo1
+az aks get-credentials --resource-group terraform-aks-tst --name terraform-aks-tst-cluster
 
 # List AKS Nodes
 kubectl get nodes 

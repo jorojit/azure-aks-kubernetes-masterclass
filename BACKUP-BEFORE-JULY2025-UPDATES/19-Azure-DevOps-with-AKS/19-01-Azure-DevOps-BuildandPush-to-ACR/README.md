@@ -72,7 +72,7 @@ https://github.com/stacksimplify/azure-devops-github-acr-aks-app1
   - https://dev.azure.com/
   - Sign in to Azure DevOps
 - Our Organization will be automatically created and if you want to manually create organization you can create one. 
-- Organization Name: aksdemo1
+- Organization Name: terraform-aks-tst-cluster
 
 
 ## Step-06 : Create DevOps Project

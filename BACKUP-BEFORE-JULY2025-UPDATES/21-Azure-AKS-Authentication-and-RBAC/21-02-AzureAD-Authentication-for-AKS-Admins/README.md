@@ -50,7 +50,7 @@ kubectl cluster-info
   - Last Name: AKSAdmin
 - **Password**
   - Let me create the password: check the radio button
-  - Initial Password: @AKSDemo123
+  - Initial Password: @terraform-aks-tst-cluster23
 - **Groups & Role**
   - Groups: k8sadmins
   - Roles: User
@@ -61,7 +61,7 @@ kubectl cluster-info
 - Gather Full username from AD
 - URL: https://portal.azure.com
 - Username: user1aksadmin@stacksimplifygmail.onmicrosoft.com 
-- Current Password: @AKSDemo123
+- Current Password: @terraform-aks-tst-cluster23
 - New Password: @AKSADAuth1011
 - Confirm Password: @AKSADAuth1011
 

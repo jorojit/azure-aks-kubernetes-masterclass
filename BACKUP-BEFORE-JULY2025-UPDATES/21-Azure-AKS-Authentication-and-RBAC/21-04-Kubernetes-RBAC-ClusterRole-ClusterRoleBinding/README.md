@@ -34,7 +34,7 @@ az role assignment create \
 AKS_READONLY_USER_OBJECT_ID=$(az ad user create \
   --display-name "AKS READ1" \
   --user-principal-name aksread1@stacksimplifygmail.onmicrosoft.com \
-  --password @AKSDemo123 \
+  --password @terraform-aks-tst-cluster23 \
   --query objectId -o tsv)
 echo $AKS_READONLY_USER_OBJECT_ID
 
@@ -45,7 +45,7 @@ az ad group member add --group aksreadonly --member-id $AKS_READONLY_USER_OBJECT
 ## Step-03: Test aksreadonly User Authentication to Portal
 - URL: https://portal.azure.com
 - Username: aksread1@stacksimplifygmail.onmicrosoft.com
-- Password: @AKSDemo123
+- Password: @terraform-aks-tst-cluster23
 
 
 ## Step-04: Review Kubernetes RBAC ClusterRole & ClusterRoleBinding
@@ -120,7 +120,7 @@ kubectl get pods --all-namespaces
 - URL: https://microsoft.com/devicelogin
 - Code: GCHL8J45R (Sample)(View on terminal)
 - Username: aksread1@stacksimplifygmail.onmicrosoft.com
-- Password: @AKSDemo123
+- Password: @terraform-aks-tst-cluster23
 
 # List Nodes
 kubectl get nodes

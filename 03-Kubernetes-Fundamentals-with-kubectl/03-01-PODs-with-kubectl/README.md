@@ -9,7 +9,7 @@
 - Verify if kubernetes worker nodes are ready. 
 ```
 # Configure Cluster Creds (kube config) for Azure AKS Clusters
-az aks get-credentials --resource-group terraform-aks-tst --name aksdemo1
+az aks get-credentials --resource-group terraform-aks-tst --name terraform-aks-tst-cluster
 
 # Get Worker Node Status
 kubectl get nodes

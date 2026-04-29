@@ -69,7 +69,7 @@ az role assignment create \
 DEV_AKS_USER_OBJECT_ID=$(az ad user create \
   --display-name "AKS Dev1" \
   --user-principal-name aksdev1@stacksimplifygmail.onmicrosoft.com \
-  --password @AKSDemo123 \
+  --password @terraform-aks-tst-cluster23 \
   --query objectId -o tsv)
 echo $DEV_AKS_USER_OBJECT_ID  
 
@@ -80,7 +80,7 @@ az ad group member add --group devaksteam --member-id $DEV_AKS_USER_OBJECT_ID
 ## Step-04: Test Dev User Authentication to Portal
 - URL: https://portal.azure.com
 - Username: aksdev1@stacksimplifygmail.onmicrosoft.com
-- Password: @AKSDemo123
+- Password: @terraform-aks-tst-cluster23
 
 
 ## Step-05: Review Kubernetes RBAC Role & Role Binding
@@ -159,7 +159,7 @@ kubectl get pods -n dev
 - URL: https://microsoft.com/devicelogin
 - Code: GLUQPEQ2N (Sample)(View on terminal)
 - Username: aksdev1@stacksimplifygmail.onmicrosoft.com
-- Password: @AKSDemo123
+- Password: @terraform-aks-tst-cluster23
 
 # List Services from Dev Namespace
 kubectl get svc -n dev

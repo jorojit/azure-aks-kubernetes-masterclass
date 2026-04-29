@@ -17,13 +17,13 @@
 ## Step-02: Create Static Public IP
 ```t
 # Get the resource group name of the AKS cluster 
-az aks show --resource-group terraform-aks-tst --name aksdemo1 --query nodeResourceGroup -o tsv
+az aks show --resource-group terraform-aks-tst --name terraform-aks-tst-cluster --query nodeResourceGroup -o tsv
 
 # TEMPLATE - Create a public IP address with the static allocation
 az network public-ip create --resource-group <REPLACE-OUTPUT-RG-FROM-PREVIOUS-COMMAND> --name myAKSPublicIPForIngress --sku Standard --allocation-method static --query publicIp.ipAddress -o tsv
 
 # REPLACE - Create Public IP: Replace Resource Group value
-az network public-ip create --resource-group MC_terraform-aks-tst_aksdemo1_centralus --name myAKSPublicIPForIngress --sku Standard --allocation-method static --query publicIp.ipAddress -o tsv
+az network public-ip create --resource-group MC_terraform-aks-tst_terraform-aks-tst-cluster_centralus --name myAKSPublicIPForIngress --sku Standard --allocation-method static --query publicIp.ipAddress -o tsv
 ```
 - Make a note of Static IP which we will use in next step when installing Ingress Controller
 ```t

@@ -21,7 +21,7 @@ description: Understand Kubernetes Namespace basics on Azure Kubernetes Service 
 - We should have configured our AKS Cluster credentials in command line to execute `kubectl` commands
 ```
 # Configure AKS Cluster Credentials from command line
-az aks get-credentials --name aksdemo1 --resource-group terraform-aks-tst
+az aks get-credentials --name terraform-aks-tst-cluster --resource-group terraform-aks-tst
 
 # List Worker Nodes
 kubectl get nodes

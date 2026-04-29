@@ -9,7 +9,7 @@
 - **Basics**
   - **Subscription:** Free Trial
   - **Resource Group:** Creat New: terraform-aks-tst
-  - **Kubernetes Cluster Name:** aksdemo1
+  - **Kubernetes Cluster Name:** terraform-aks-tst-cluster
   - **Region:** (US) Central US
   - **Kubernetes Version:** Select what ever is latest stable version
   - **Node Size:** Standard DS2 v2 (Default one)
@@ -39,7 +39,7 @@
 az aks get-credentials --resource-group <Resource-Group-Name> --name <Cluster-Name>
 
 # Replace Resource Group & Cluster Name
-az aks get-credentials --resource-group terraform-aks-tst --name aksdemo1
+az aks get-credentials --resource-group terraform-aks-tst --name terraform-aks-tst-cluster
 
 # List Kubernetes Worker Nodes
 kubectl get nodes 
@@ -97,7 +97,7 @@ az login
 az aks install-cli
 
 # Configure Cluster Creds (kube config)
-az aks get-credentials --resource-group terraform-aks-tst --name aksdemo1
+az aks get-credentials --resource-group terraform-aks-tst --name terraform-aks-tst-cluster
 
 # List AKS Nodes
 kubectl get nodes 

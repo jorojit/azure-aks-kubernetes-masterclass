@@ -83,7 +83,7 @@ echo $AKS_AD_AKSADMIN_GROUP_ID
 AKS_AD_AKSADMIN1_USER_OBJECT_ID=$(az ad user create \
   --display-name "AKS Admin1" \
   --user-principal-name aksadmin1@stacksimplifygmail.onmicrosoft.com \
-  --password @AKSDemo123 \
+  --password @terraform-aks-tst-cluster23 \
   --query objectId -o tsv)
 echo $AKS_AD_AKSADMIN1_USER_OBJECT_ID
 
@@ -92,7 +92,7 @@ az ad group member add --group aksadmins --member-id $AKS_AD_AKSADMIN1_USER_OBJE
 
 # Make a note of Username and Password
 Username: aksadmin1@stacksimplifygmail.onmicrosoft.com
-Password: @AKSDemo123
+Password: @terraform-aks-tst-cluster23
 ```
 
 ## Step-04: Pre-requisite-4: Create SSH Key
@@ -201,7 +201,7 @@ kubectl get nodes
 URL: https://microsoft.com/devicelogin
 Code: HL724557M
 Username: aksadmin1@stacksimplifygmail.onmicrosoft.com
-Password: @AKSDemo123
+Password: @terraform-aks-tst-cluster23
 
 # Cluster Info
 kubectl cluster-info
