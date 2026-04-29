@@ -142,8 +142,8 @@ I0824 13:09:00.496904       1 controller.go:135] cert-manager/controller/orders 
 ## Step-10: Access Application
 ```t
 # URLs
-http://sapp1.kubeoncloud.com/app1/index.html
-http://sapp2.kubeoncloud.com/app2/index.html
+http://sapp1.awsbestbractices.com/app1/index.html
+http://sapp2.awsbestbractices.com/app2/index.html
 ```
 
 ## Step-11: Verify Ingress logs for Client IP

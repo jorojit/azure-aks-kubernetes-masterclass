@@ -186,29 +186,29 @@ kubectl logs -f $(kubectl get po | egrep -o 'external-dns[A-Za-z0-9-]+')
 ```
 - External DNS Pod Logs
 ```log
-time="2020-08-24T11:30:54Z" level=info msg="Updating A record named 'eapp1' to '20.37.141.33' for Azure DNS zone 'kubeoncloud.com'."
-time="2020-08-24T11:30:55Z" level=info msg="Updating TXT record named 'eapp1' to '\"heritage=external-dns,external-dns/owner=default,external-dns/resource=ingress/default/nginxapp1-ingress-service\"' for Azure DNS zone 'kubeoncloud.com'."
+time="2020-08-24T11:30:54Z" level=info msg="Updating A record named 'eapp1' to '20.37.141.33' for Azure DNS zone 'awsbestbractices.com'."
+time="2020-08-24T11:30:55Z" level=info msg="Updating TXT record named 'eapp1' to '\"heritage=external-dns,external-dns/owner=default,external-dns/resource=ingress/default/nginxapp1-ingress-service\"' for Azure DNS zone 'awsbestbractices.com'."
 ```
 
-### Verify Record Set in DNS Zones -> kubeoncloud.com
-- Go to All Services -> DNS Zones -> kubeoncloud.com
-- Verify if we have `eapp1.kubeoncloud.com` created
+### Verify Record Set in DNS Zones -> awsbestbractices.com
+- Go to All Services -> DNS Zones -> awsbestbractices.com
+- Verify if we have `eapp1.awsbestbractices.com` created
 ```t
 # Template Command
 az network dns record-set a list -g <Resource-Group-dnz-zones> -z <yourdomain.com>
 
 # Replace DNS Zones Resource Group and yourdomain
-az network dns record-set a list -g dns-zones -z kubeoncloud.com
+az network dns record-set a list -g dns-zones -z awsbestbractices.com
 ```
 - Perform `nslookup` test
 ```t
 # nslookup Test
-Kalyans-MacBook-Pro:01-ExternalDNS kdaida$ nslookup eapp1.kubeoncloud.com
+Kalyans-MacBook-Pro:01-ExternalDNS kdaida$ nslookup eapp1.awsbestbractices.com
 Server:		192.168.0.1
 Address:	192.168.0.1#53
 
 Non-authoritative answer:
-Name:	eapp1.kubeoncloud.com
+Name:	eapp1.awsbestbractices.com
 Address: 20.37.141.33
 
 Kalyans-MacBook-Pro:01-ExternalDNS kdaida$ 
@@ -217,10 +217,10 @@ Kalyans-MacBook-Pro:01-ExternalDNS kdaida$
 ### Access Application and Test
 ```t
 # Access Application
-http://eapp1.kubeoncloud.com
-http://eapp1.kubeoncloud.com/app1/index.html
+http://eapp1.awsbestbractices.com
+http://eapp1.awsbestbractices.com/app1/index.html
 
-# Note: Replace kubeoncloud.com with your domain name
+# Note: Replace awsbestbractices.com with your domain name
 ```
 
 ## Step-07: Clean-Up
@@ -236,12 +236,12 @@ kubectl logs -f $(kubectl get po | egrep -o 'external-dns[A-Za-z0-9-]+')
 az network dns record-set a list -g <Resource-Group-dnz-zones> -z <yourdomain.com>
 
 # Replace DNS Zones Resource Group and yourdomain
-az network dns record-set a list -g dns-zones -z kubeoncloud.com
+az network dns record-set a list -g dns-zones -z awsbestbractices.com
 ```
 
 ```log
-time="2020-08-24T12:08:52Z" level=info msg="Deleting A record named 'eapp1' for Azure DNS zone 'kubeoncloud.com'."
-time="2020-08-24T12:08:53Z" level=info msg="Deleting TXT record named 'eapp1' for Azure DNS zone 'kubeoncloud.com'."
+time="2020-08-24T12:08:52Z" level=info msg="Deleting A record named 'eapp1' for Azure DNS zone 'awsbestbractices.com'."
+time="2020-08-24T12:08:53Z" level=info msg="Deleting TXT record named 'eapp1' for Azure DNS zone 'awsbestbractices.com'."
 ```
 
 ## References

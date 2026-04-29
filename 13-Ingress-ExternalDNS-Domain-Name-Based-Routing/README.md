@@ -42,19 +42,19 @@ kubectl logs -f $(kubectl get po | egrep -o 'external-dns[A-Za-z0-9-]+')
 az network dns record-set a list -g <Resource-Group-dnz-zones> -z <yourdomain.com>
 
 # Replace DNS Zones Resource Group and yourdomain
-az network dns record-set a list -g dns-zones -z kubeoncloud.com
+az network dns record-set a list -g dns-zones -z awsbestbractices.com
 ```
 
 ## Step-05: Access Applications
 ```t
 # Access App1
-http://eapp1.kubeoncloud.com/app1/index.html
+http://eapp1.awsbestbractices.com/app1/index.html
 
 # Access App2
-http://eapp2.kubeoncloud.com/app2/index.html
+http://eapp2.awsbestbractices.com/app2/index.html
 
 # Access Usermgmt Web App
-http://eapp3.kubeoncloud.com
+http://eapp3.awsbestbractices.com
 Username: admin101
 Password: password101
 
@@ -70,7 +70,7 @@ kubectl delete -R -f kube-manifests/
 az network dns record-set a list -g <Resource-Group-dnz-zones> -z <yourdomain.com>
 
 # Replace DNS Zones Resource Group and yourdomain
-az network dns record-set a list -g dns-zones -z kubeoncloud.com
+az network dns record-set a list -g dns-zones -z awsbestbractices.com
 ```
 
 ## Ingress Annotation Reference

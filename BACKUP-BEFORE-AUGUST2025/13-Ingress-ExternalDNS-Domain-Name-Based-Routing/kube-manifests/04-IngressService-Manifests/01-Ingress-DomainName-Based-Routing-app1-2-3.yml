@@ -7,7 +7,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-    - host: eapp1.kubeoncloud.com
+    - host: eapp1.awsbestbractices.com
       http:
         paths:
           - path: /
@@ -17,7 +17,7 @@ spec:
                 name: app1-nginx-clusterip-service
                 port: 
                   number: 80
-    - host: eapp2.kubeoncloud.com
+    - host: eapp2.awsbestbractices.com
       http:
         paths:
           - path: /
@@ -27,7 +27,7 @@ spec:
                 name: app2-nginx-clusterip-service
                 port: 
                   number: 80
-    - host: eapp3.kubeoncloud.com
+    - host: eapp3.awsbestbractices.com
       http:
         paths:
           - path: /
