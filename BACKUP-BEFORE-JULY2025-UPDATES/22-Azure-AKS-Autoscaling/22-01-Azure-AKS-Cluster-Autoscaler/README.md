@@ -10,7 +10,7 @@
 ## Step-02: Create Cluster with Cluster Autoscaler Enabled
 ```
 # Setup Environment Variables
-export RESOURCE_GROUP=aks-rg1-autoscaling
+export RESOURCE_GROUP=terraform-aks-tst-autoscaling
 export REGION=centralus
 export AKS_CLUSTER=aks-autoscaling-demo
 echo $RESOURCE_GROUP, $REGION, $AKS_CLUSTER

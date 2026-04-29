@@ -109,7 +109,7 @@ spec:
 - Go to All Services -> Managed Identities -> Add
 - Resource Name: aksdemo1-externaldns-access-to-dnszones
 - Subscription: Pay-as-you-go
-- Resource group: aks-rg1
+- Resource group: terraform-aks-tst
 - Location: Central US
 - Click on **Create**
 

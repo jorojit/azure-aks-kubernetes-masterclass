@@ -12,7 +12,7 @@
 - Create Kubernetes Cluster
 ### Basics
 - **Subscription:** StackSimplify-Paid-Subscription
-- **Resource Group:** Creat New: aks-rg1
+- **Resource Group:** Creat New: terraform-aks-tst
 - **Cluster preset configuration:** Dev/Test
 - **Kubernetes Cluster Name:** aksdemo1  
 - **Region:** (US) East US
@@ -75,7 +75,7 @@
 az aks get-credentials --resource-group <Resource-Group-Name> --name <Cluster-Name>
 
 # Replace Resource Group & Cluster Name
-az aks get-credentials --resource-group aks-rg1 --name aksdemo1
+az aks get-credentials --resource-group terraform-aks-tst --name aksdemo1
 
 # Get kubectl client version only (shows client version only (no server required))
 kubectl version --client=true
@@ -132,7 +132,7 @@ kubectl version
 az login
 
 # Configure Cluster Creds (kube config)
-az aks get-credentials --resource-group aks-rg1 --name aksdemo1
+az aks get-credentials --resource-group terraform-aks-tst --name aksdemo1
 
 # List AKS Nodes
 kubectl get nodes 

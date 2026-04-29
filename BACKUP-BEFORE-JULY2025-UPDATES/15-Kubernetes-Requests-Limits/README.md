@@ -19,7 +19,7 @@ description: Understand Kubernetes Resources Requests & Limits on Azure Kubernet
 - We should have configured our AKS Cluster credentials in command line to execute `kubectl` commands
 ```
 # Configure AKS Cluster Credentials from command line
-az aks get-credentials --name aksdemo1 --resource-group aks-rg1
+az aks get-credentials --name aksdemo1 --resource-group terraform-aks-tst
 
 # List Worker Nodes
 kubectl get nodes

@@ -64,7 +64,7 @@ http://<External-IP-from-get-service-output>/app1/index.html
 
 ## Step-04: Upload Nginx Files to Azure File Share
 - Go to Storage Accounts
-- Select and Open storage account under resoure group **mc_aks-rg1_aksdemo1_eastus**
+- Select and Open storage account under resoure group **mc_terraform-aks-tst_aksdemo1_eastus**
 - In **Overview**, go to **File Shares**
 - Open File share with name which starts as **kubernetes-dynamic-pv-xxxxxx**
 - Click on **Upload** and upload 
@@ -115,7 +115,7 @@ http://<External-IP-from-get-service-output>
 
 ## Step-09: Upload Nginx Files to Azure File Share
 - Go to Storage Accounts
-- Select and Open storage account under resoure group **mc_aks-rg1_aksdemo1_eastus**
+- Select and Open storage account under resoure group **mc_terraform-aks-tst_aksdemo1_eastus**
 - In **Overview**, go to **File Shares**
 - Open File share with name which starts as **kubernetes-dynamic-pv-xxxxxx**
 - Click on **Upload** and upload 

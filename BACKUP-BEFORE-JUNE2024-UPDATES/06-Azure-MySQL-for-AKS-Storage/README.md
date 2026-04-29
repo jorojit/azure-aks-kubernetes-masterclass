@@ -10,7 +10,7 @@
 - **Basics**
 - **Project details**
   - Subscription: Free Trial
-  - Resource Group: aks-rg1
+  - Resource Group: terraform-aks-tst
 - **Server Details**
   - Server name: akswebappdb (This name is based on availability - in your case it might be something else)
   - Data source: none

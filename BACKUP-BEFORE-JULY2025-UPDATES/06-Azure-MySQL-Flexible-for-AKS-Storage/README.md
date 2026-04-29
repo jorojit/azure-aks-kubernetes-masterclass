@@ -10,7 +10,7 @@
 - **Basics**
 - **Project details**
   - Subscription: SUBSCRIPTION-NAME
-  - Resource Group: aks-rg1
+  - Resource Group: terraform-aks-tst
 - **Server Details**
   - Server name: akswebappdb201 (This name is based on availability - in your case it might be something else)
   - Region: (US) East US
