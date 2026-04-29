@@ -14,7 +14,7 @@
 - **Server Details**
   - Server name: akswebappdb (This name is based on availability - in your case it might be something else)
   - Data source: none
-  - Location: (US) East US
+  - Location: (Europe) Austria East
   - Version: 5.7 (default)
   - **Compute + Storage**
     - Pricing Tier: Basic

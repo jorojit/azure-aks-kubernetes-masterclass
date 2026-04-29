@@ -15,7 +15,7 @@
 - **Resource Group:** Creat New: terraform-aks-tst
 - **Cluster preset configuration:** Dev/Test
 - **Kubernetes Cluster Name:** aksdemo1  
-- **Region:** (US) East US
+- **Region:** (Europe) Austria East
 - **Fleet Manager:** NONE (LEAVE TO DEFAULT)
 - **Availability zones:** NONE (LEAVE TO DEFAULT)
 - **AKS Pricing Tier:** Free

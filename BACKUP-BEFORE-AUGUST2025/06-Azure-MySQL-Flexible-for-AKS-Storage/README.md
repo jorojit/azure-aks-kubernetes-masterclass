@@ -13,7 +13,7 @@
   - Resource Group: terraform-aks-tst
 - **Server Details**
   - Server name: akswebappdb201 (This name is based on availability - in your case it might be something else)
-  - Region: (US) East US
+  - Region: (Europe) Austria East
   - MySQL Version: 8.0 (default)
   - Workload type: For development or hobby projects
   - **Compute + Storage:** Leave to defaults
